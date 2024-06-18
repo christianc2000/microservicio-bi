@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  web:
+    image: microservicio-bi:1.0.0
+    build: .
+    ports:
+      - "5000:5000"
