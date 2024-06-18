@@ -7,7 +7,7 @@ from models import Miembro,Evento,Asistencia,Donacion,TipoDonacion
 app = Flask(__name__)
 CORS(app)  # Aplica CORS a tu aplicación Flask
 # Conexión a MongoDB con MongoEngine usando la cadena de conexión SRV
-connect('dbiglesia', host='mongodb+srv://christianc2000:PaPo9821@clusteriglesia.4epxwxo.mongodb.net?retryWrites=true&w=majority&appName=ClusterIglesia')
+connect('dbiglesia', host='mongodb+srv://username:password@clusteriglesia.4epxwxo.mongodb.net?retryWrites=true&w=majority&appName=ClusterIglesia')
 
 @app.route('/')
 def hello():
